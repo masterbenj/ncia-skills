@@ -1,0 +1,9 @@
+CREATE SCHEMA test;
+
+CREATE TABLE test.tbl_employees (
+    id SERIAL PRIMARY KEY,
+    lname VARCHAR(255) NOT NULL,
+    fname VARCHAR(255) NOT NULL,
+	position VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
